@@ -3,42 +3,103 @@
 <title>PortfolioOfSujal</title>
 <link rel="icon" type="image/png" href="assets/logo.png">
 <style>
+
+
 img{
 border-radius: 25px;
   transition: transform 0.2s;
+
+  
 }
 img:hover{
 transform: scale(1.1);
 }
+nav .logo{
+color: white;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 25px;
+font-weight: bold;
 
+}
+nav{
+display:flex;
+align-items: center;
+padding: 10px 20px ;
+justify-content: space-between;
+border-radius:10px ;
+}
+
+nav ul {
+  list-style: none;  /* Removes bullets from the list */
+  display: flex;     /* Puts list items in one line */
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 20px; /* Space between links */
+}
+
+nav ul li a {
+  text-decoration: none; /* Removes underline */
+  color: white;          /* Link color */
+  font-size: 18px;
+  transition: 0.3s;      /* Smooth hover effect */
+}
+
+nav ul li a:hover {
+  color: rgb(137, 135, 132);         /* Changes color when hovered */
+}
+h3{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-style: oblique;
+align-content: space-between;
+
+}
+h1{
+  font-size: 35px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ font-style: oblique;
+}
+header{
+  background-color: black;
+}
 </style>
 </head>
 <body bgcolor="gray">
-<font face="Goudy Stout" size="6.8">
-
-<h1>
-My <br>Portfolio
-<a href="bio.html">
+   <header>
+<nav>
+  <div class="logo">Portfolio</div>
+ </div>
+  <ul>
+    <li>
+      <a href="bio.html">About</a>
+    </li>
+    <li>
+      <a href="">Skills</a>
+    </li>
+    <li>
+      <a href="">Projects</a>
+    </li>
+  </ul>
+</nav>
+   </header>
+  
+  
+  
+   <font face="Goudy Stout" size="6.8">
+    <a href="bio.html">
 <img src="assets\sujal.jpg" align="right">
-</img>
+</img> 
 </a>
 </h1>
 </font>
+<h1> Short bio <hr color="black"></h1>
+
 <h3>
-My name is Sujal Bhurtel. I'm 14 years old. <br>My hobby is coding and art. I'm very much interested to coding.<br> I love HTML language for coding.<br>
+Hi! I'm Sujal Bhurtel, a beginner web devloper <br>My hobby is coding and art. I'm very much interested to coding.<br> I love HTML language for coding.<br>
 </h3>
-<footer>
-<font face="Elephant" size="6.8" >
-For more information click on the picture to get  into my Portfolio page.
-</font>
-<font color="ffffff" size="6.8" face="Elephant">
-<marquee behavior="alternate" Direction="right" scrolldelay=5font size="7" bgcolor="black">
-Thank You For Visting my Portfolio!!!
-</marquee>
-</font>
-</footer>
 
 
 </body>
 </html>
-
