@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>PortfolioOfSujal</title>
+
+	<style>
+
+body{
+
+ margin: 0;
+    background: linear-gradient(to  bottom right, #a1c4fd, #c2e9fb);
+}
+
+ nav .logo{
+color: black;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 25px;
+font-weight: bold;
+
+}
+nav{
+display:flex;
+align-items: center;
+padding: 10px 20px ;
+justify-content: space-between;
+border-radius:10px ;
+background-color: #4955df;
+}
+
+nav ul {
+  list-style: none;  /* Removes bullets from the list */
+  display: flex;     /* Puts list items in one line */
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 20px; /* Space between links */
+}
+
+nav ul li a {
+  text-decoration: none; /* Removes underline */
+  color: white;          /* Link color */
+  font-size: 18px;
+  transition: 0.3s;      /* Smooth hover effect */
+}
+
+nav ul li a:hover {
+  color: rgb(137, 135, 132);         /* Changes color when hovered */
+}
+h1{
+      font-size: 50px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      color:rgb(73, 85, 223);
+  }
+h2{
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     font-style: oblique;
+     align-content: space-between;
+}
+
+img{
+border-radius: 50%;
+  transition: transform 0.3s;
+
+    max-width: 100%;
+    height: auto;
+}
+}
+img:hover{
+transform: scale(1.2); /* zoom in */
+}
+
+.container {
+
+    width: 100%;
+    max-width: 600px;   /* max size on big screens */
+}
+
+.skill {
+
+    background: #e6e6e6;
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    width: 65%;
+}
+
+.skill-info {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background: #d0d0d0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background: #4e73df;
+    border-radius: 10px;
+}
+
+/* Individual widths */
+.html { width: 95%; }
+
+.js { width: 50%; }
+.cms { width: 65%; }
+
+.skills__img{
+ 
+  
+    width: 480px;
+    display: flex-direction;
+    position: absolute;
+    right: -50px;   /* distance from right */
+    top: 250px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+
+
+
+}
+footer{
+background: #00008B;
+color: white;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a{
+color: yellow;
+transition: 0.3s;
+}
+a:hover{
+color: #D4AF37;
+transform: scale(1.1);
+}
+@media (max-width: 480px) {
+    .skill-info {
+        font-size: 14px;
+    }
+
+    .progress-bar {
+        height: 6px;
+    }
+     .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .skills__img{
+      align-content: background;
+
+
+
+    }
+
+
+}
+</style>
+</head>
+<body>
+
+<header>
+	
+<nav>
+  <div class="logo">Portfolio</div>
+ </div>
+  <ul>
+   <li>
+      <a href="index.html">Home</a>
+    </li>
+    <li>
+      <a href="bio.html">About</a>
+    </li>
+    <li>
+      <a href="skill.html">Skills</a>
+    </li>
+    <li>
+      <a href="project.html">Projects</a>
+    </li>
+  </ul>
+</nav>
+
+</header>
+
+<b>
+  <center>
+
+      <h1 align="left">My Skills</h1>
+      <hr align="left" color="rgb(73, 85, 223)" size="3px" Width="100%">
+
+  </center>
+
+
+<p>
+<h2>
+I have a good understanding of the following technologies and tools.
+<br><br>
+
+
+<br>
+
+
+- Communication Skills
+
+<br>
+
+- Design Thinking
+<br>
+- Business or Personal Web Design 
+<br>
+- Problem-Solving
+
+<br>
+- Computer Literacy
+
+<br>
+- Project Management 
+
+      
+
+</h2>
+</p>  
+ 
+
+  <div class="container">
+
+    <div class="skill">
+        <div class="skill-info">
+            <span>HTML5</span>
+            <span>95%</span>
+        </div>
+        <div class="progress-bar">
+            <div class="progress html"></div>
+        </div>
+    </div>
+
+   
+
+    <div class="skill">
+        <div class="skill-info">
+            <span>JAVASCRIPT</span>
+            <span>50%</span>
+        </div>
+        <div class="progress-bar">
+            <div class="progress js"></div>
+        </div>
+    </div>
+
+    <div class="skill">
+        <div class="skill-info">
+            <span>CSS</span>
+            <span>65%</span>
+        </div>
+        <div class="progress-bar">
+            <div class="progress cms"></div>
+        </div>
+    </div>
+
+</div>
+              
+   <div>
+            <img src="assets/computer.jpg" alt="#" class="skills__img" />
+          </div>        
+                  
+                          
+     
+</center> 
+</b>
+
+<center>
+<footer>
+<font face="Apoch" size="5">
+You can contact me on:<br>
+</font>
+<a href="https://www.facebook.com/profile.php?id=61574817687816" target="_blank">Facebook</a>
+<font face="Arial Unicode MS" >l</font>
+<a href="https://tiktok.com/@Sujal_069" target="_blank">TikTok</a>
+<font face="Arial Unicode MS" >l</font>
+<a href="https://instagram.com/sujalbhurtel_069" target="_blank">Instagram</a>
+<font font color="yellow">
+<marquee behavior="alternate" bgcolor=" #00008B" direction="left" scrolldelay=4font size=7 >
+Thank You For Visiting for My Portfolio!!
+</marquee>
+</font>
+</footer>
+</center> 
+
+</body>
+</html>
