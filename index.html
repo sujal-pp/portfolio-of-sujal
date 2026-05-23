@@ -4,134 +4,146 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login page for Sujal Portfolio</title>
-    <link rel="icon" type="image/png" href="https://i.pinimg.com/736x/5e/6d/7d/5e6d7dced058e29e98cb453a9478a915.jpg">
-
     <style>
         
+/* Global Reset & Body Layout */
+* {
+    box-sizing: border-box; /* Ensures padding doesn't break element widths */
+}
 
+html, body {
+    height: 100%;
+    margin: 0;
+}
 
-  
-body{
-  margin: auto;
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url(bg.png);
+body {
+    display: flex;
+    flex-direction: column; /* Stacks the container and the footer vertically */
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(bg.png);
+    background-attachment: fixed; /* Keeps background steady on mobile scroll */
 }
     
 footer {
-  text-align: center;
-  padding: 0%;
-  background: #00008B;
-  color: white;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  
+    text-align: center;
+    padding: 1.5rem 1rem; /* Added padding so content doesn't choke on small devices */
+    background: #00008B;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: auto; /* Magic trick: Pushes the footer down to the absolute bottom of the page */
+    width: 100%;
 }
 
 .footer-inner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
 }
 
 .footer-label {
-  font-family: 'Arial', sans-serif;
-  font-size: 1.2rem;
-  margin: 0;
+    font-family: 'Arial', sans-serif;
+    font-size: 1.2rem;
+    margin: 0;
 }
 
 .social-links {
-  display: flex;
-  align-items: center;
-  gap: 0.50rem;
+    display: flex;
+    align-items: center;
+    gap: 0.50rem;
 }
 
 .social-icon img {
-  width: 30px;
-  height: 30px;
-  display: block;
-  transition: opacity 0.2s;
+    width: 30px;
+    height: 30px;
+    display: block;
+    transition: opacity 0.2s;
 }
 
 .social-icon:hover img {
-  opacity: 0.85;
+    opacity: 0.85;
 }
 
 .divider {
-  color: #aaa;
-  font-size: 1.2rem;
-  user-select: none;
+    color: #aaa;
+    font-size: 1.2rem;
+    user-select: none;
 }
 
 .footer-copy {
-  color: yellow;
-  font-size: 0.9rem;
-  margin: 0;
+    color: yellow;
+    font-size: 0.9rem;
+    margin: 0;
 }
 
 
-        a{
-         color: yellow;
-         transition: 0.3s;
-         }
-         a:hover{
-         color: #D4AF37;
-         transform: scale(1.1);
-}
-.container{
-    width:100%;
-    max-width:425px;
-    padding:25px;
-    margin-left: 400px;
-    margin-top:40px;
-    margin-bottom:40px;
-    border-radius:35px;
-    border:2px solid rgba(255,255,255,0.2);
-    background:rgba(224,196,143,0.08);
-    backdrop-filter:blur(10px);
+
+/* Made the main container responsive */
+.container {
+    width: 90%; /* Leaves a 5% breathing gap on both sides of a mobile screen */
+    max-width: 425px; /* Matches your original design width on desktops */
+    padding: 25px;
+    margin: 40px auto; /* Centers the card horizontally on ALL screens automatically */
+    border-radius: 35px;
+    border: 2px solid rgba(255,255,255,0.2);
+    background: rgba(224,196,143,0.08);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* Core support for Safari mobile browsers */
     color:white;
-    box-shadow:0 0 20px rgba(0,0,0,0.3);
-  
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
 }
-.header{
-    text-align: center;
-   font-size: x-large;
-   font-weight: 100;
-   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
+.header {
+    text-align: center;
+    font-size: x-large;
+    font-weight: 100;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.content{
+
+.content {
     font-size: large;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 50;
     font-style: initial;
     margin-top: 10px;
 }
-button{
-   color: white;
+
+/* Made the enter button clean and responsive */
+button {
+    color:  white;
     font-size: x-large;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    border-radius:10px;
-    margin-left: 115px;
+    border-radius: 30px; /* A 50% border radius works for squares, 30px creates a clean capsule shape */
+    padding: 10px 25px;
+    display: block;
+    margin: 20px auto 0 auto; /* Centers the button perfectly inside the container */
     background: transparent;
-    
-
+    border: 2px solid rgb(162, 159, 159);
+    cursor: pointer;
+   
 }
-.name input{
-  width: 400px;
-  height: 30px;
-  border-radius: 30px;
-
+a{
+    color: transparent;
 }
 
-
-
+/* Fixed the inputs from breaking past the card borders */
+.name input {
+    width: 100%; /* Spans across the container fluidly */
+    max-width: 100%;
+    height: 35px;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 0 15px; /* Adds space inside the inputs so your text isn't pressed against the edges */
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
 
     </style>
 </head>
-<body >
+<body>
    
     <div class="container">
         <!--Header Section-->
@@ -169,6 +181,7 @@ To get a access to Sujal Portfolio you need to put some imformation about yourse
 
    
     
+    
     <a href="home.html">
         <button type="button">
              Enter Portfolio 
@@ -201,7 +214,7 @@ To get a access to Sujal Portfolio you need to put some imformation about yourse
 
       <span class="divider">|</span>
 
-      <a href="https://instagram.com/sujalbhurtel_69" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+      <a href="https://instagram.com/sujalbhurtel_069" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
         <div class="social-icon">
           <img src="assets/instagram.png" alt="Instagram">
         </div>
@@ -209,13 +222,9 @@ To get a access to Sujal Portfolio you need to put some imformation about yourse
     </div>
 
     <p class="footer-copy">
-      &copy ; 2026 Portfolio of Sujal. All rights reserved.</p>
+      &copy; 2026 Portfolio of Sujal. All rights reserved.</p>
   </div>
 </footer>
-    
-
-
-    
     
 </body>
 </html>
