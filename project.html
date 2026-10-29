@@ -27,6 +27,7 @@ padding: 10px 20px ;
 justify-content: space-between;
 
 background-color: #4955df;
+border-radius: 5px;
 }
 
 nav ul {
@@ -54,7 +55,7 @@ nav ul li a:hover {
 }
 h1{
       font-size: 50px;
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow ', sans-serif;
       color:rgb(73, 85, 223);
   }
   h2{
@@ -72,7 +73,8 @@ footer {
   padding: 0%;
   background: #00008B;
   color: white;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 400;
   
 }
 
@@ -84,7 +86,7 @@ footer {
 }
 
 .footer-label {
-  font-family: 'Arial', sans-serif;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 1.2rem;
   margin: 0;
 }
@@ -93,6 +95,7 @@ footer {
   display: flex;
   align-items: center;
   gap: 0.50rem;
+
 }
 
 .social-icon img {
@@ -122,18 +125,24 @@ footer {
 a{
 color: yellow;
 transition: 0.3s;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 a:hover{
 color: #D4AF37;
 transform: scale(1.1);
 }
-img{
+.project-icon img{
 	border-radius: 50px;
 	width: 200px;
 	height: 200px;
+  transition: opacity 0.2s;
+
 }
-img:hover{
-    transform: scale(1.2);
+
+
+
+.project-icon:hover img{
+    opacity: 0.85;
 }
 .btn {
     display: inline-block;
@@ -217,26 +226,27 @@ button{
   <div class="content">
     <h1 align="left">My Projects</h1>
       <hr align="left" color="rgb(73, 85, 223)" size="3px" Width="100%">
-    <p>
+
 
     <center>
  	<h2>
  		If you want to visit my projects, Scan the qr or click on the button of the certain project.👇
  	</h2>
+  <div class="project-icon">
  <img src="assets/qr2.png"> 
-------------
  <img src="assets/qr1.png">
-<br>
- <a href="https://sujal-pp.github.io/portfolio-of-sujal/"  class="btn" target="_blank">My Portfolio</a>
 
-	---------------------------
+</div>
+<div class="project-btn">
 
-  <a href="https://sujalbhurtel.github.io/Shikhar-Tour---Travels/"  class="btn" target="_blank">Travel web</a> 
-   
+
+ <a href="https://sujal-pp.github.io/portfolio-of-sujal/"  class="btn" target="_blank"> Portfolio</a>
+<a href="https://sujalbhurtel.github.io/Shikhar-Tour---Travels/"  class="btn" target="_blank">Travel web</a> 
+</div>   
   
  
  
-</p>
+
 </center>
 
 </div>
@@ -261,7 +271,7 @@ button{
 
       <span class="divider">|</span>
 
-      <a href="https://instagram.com/sujalbhurtel_69" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+      <a href="https://instagram.com/sujalbhurtel_069" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
         <div class="social-icon">
           <img src="assets/instagram.png" alt="Instagram">
         </div>
@@ -269,7 +279,7 @@ button{
     </div>
 
     <p class="footer-copy">
-      &copy ; 2026 Portfolio of Sujal. All rights reserved.</p>
+      &copy 2026 Portfolio of Sujal. All rights reserved.</p>
   </div>
 </footer>
 
